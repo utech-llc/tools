@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলাদেশী ফোন নম্বর জেনারেটর | U Tech Tools</title>
+    <meta name="description" content="UTCh Tools দ্বারা নির্মিত একটি সহজে ব্যবহারযোগ্য এবং শক্তিশালী বাংলাদেশী ফোন নম্বর জেনারেটর। গ্রামীণফোন, রবি, বাংলালিংক, টেলিটক অপারেটরের জন্য সঠিক ফরম্যাটে (+880) নম্বর তৈরি করুন। পরীক্ষার ডেটা, ডেমো বা অন্যান্য প্রয়োজনে ব্যবহার করুন।">
+    <meta name="keywords" content="বাংলাদেশী ফোন নম্বর জেনারেটর, ফোন নম্বর টুলস, বিডি ফোন নম্বর, জিপি নম্বর, রবি নম্বর, বাংলালিংক নম্বর, টেলিটক নম্বর, ডেমো ফোন নম্বর, টেস্টিং ডেটা, UTCh Tools, U Tech Web Solution, bangladeshi phone number generator, bd phone number tool, dummy phone number bd">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* --- Base Styles & Variables (New Theme: Blue/Neutral) --- */
+        :root {
+            --primary-color: #0d6efd; /* Bootstrap Blue */
+            --secondary-color: #6c757d; /* Bootstrap Secondary Gray */
+            --accent-color: #0dcaf0; /* Bootstrap Cyan/Teal */
+            --background-color: #f8f9fa; /* Light Gray */
+            --container-bg: #ffffff;
+            --text-color: #212529; /* Darker Gray */
+            --light-text-color: #f8f9fa; /* Lighter text for dark backgrounds */
+            --border-color: #dee2e6; /* Light border */
+            --output-bg: #e7f0ff; /* Light Blue */
+            --placeholder-color: #6c757d; /* Secondary Gray */
+            --error-color: #dc3545; /* Red */
+            --success-color: #198754; /* Green */
+            --ad-bg-color: #e9ecef; /* Slightly darker gray */
+            --header-footer-bg: #0a58ca; /* Darker Blue */
+            --link-color: var(--primary-color);
+            --link-hover-color: #0b5ed7; /* Darker primary */
+
+            --animation-speed: 0.3s;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.12);
+            --border-radius: 8px; /* Slightly smaller radius */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px; /* Base font size */
+        }
+
+        .page-wrapper {
+            max-width: 1140px; /* Slightly wider */
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color var(--animation-speed);
+        }
+        a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+
+        /* --- Header --- */
+        .site-header {
+            background: linear-gradient(to right, var(--header-footer-bg), var(--primary-color));
+            color: var(--light-text-color);
+            padding: 15px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+        }
+
+        .site-header .page-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px; /* Add gap for wrapping */
+        }
+
+        .site-header .logo a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--light-text-color);
+            text-decoration: none;
+        }
+        .site-header .logo i {
+            color: var(--accent-color); /* Use Accent Color */
+            font-size: 1.8rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .site-header .logo .title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .site-header .logo .tagline {
+            font-size: 0.85em;
+            opacity: 0.9;
+            font-weight: 400;
+            display: block; /* Ensure it takes its own line if needed */
+        }
+
+
+        .site-header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .site-header nav a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            font-weight: 500; /* Slightly less bold */
+            transition: color var(--animation-speed), border-bottom-color var(--animation-speed);
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .site-header nav a:hover, .site-header nav a.active {
+            color: var(--accent-color); /* Cyan/Teal hover/active */
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* --- Intro Section --- */
+        .intro-section {
+            text-align: center;
+            padding: 20px 0 0; /* Add padding top */
+            margin-bottom: 20px;
+        }
+        .intro-section h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        .intro-section p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+
+        /* --- Main Content Container --- */
+        .generator-container {
+            background-color: var(--container-bg);
+            padding: 30px 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 800px; /* Wider generator */
+            margin: 0 auto 30px auto;
+            text-align: center;
+            transition: transform var(--animation-speed) ease, box-shadow var(--animation-speed) ease;
+            animation: fadeInScale 0.6s ease-out forwards;
+            position: relative;
+            overflow: hidden;
+        }
+         .generator-container:hover {
+             box-shadow: var(--shadow-hover);
+             /* transform: translateY(-2px); */ /* Optional subtle lift */
+         }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.97); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* --- Generator Header --- */
+        .generator-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .generator-header h2 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-size: 2rem; /* Slightly smaller */
+        }
+
+        .dynamic-text {
+            display: inline-block;
+            position: relative;
+            animation: colorChange 6s infinite alternate;
+            font-weight: 700;
+        }
+
+        @keyframes colorChange {
+            0%   { color: var(--primary-color); }
+            33%  { color: var(--accent-color); }
+            66%  { color: var(--secondary-color); }
+            100% { color: var(--primary-color); }
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        /* --- Controls --- */
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            min-width: 180px; /* Increased min-width */
+        }
+
+        label {
+            margin-bottom: 8px; /* More space */
+            font-weight: 500; /* Regular weight */
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        select, input[type="number"] {
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            width: 100%;
+            background-color: #fff;
+            transition: border-color var(--animation-speed) ease, box-shadow var(--animation-speed) ease;
+        }
+        select:hover, input[type="number"]:hover {
+            border-color: #aaa;
+        }
+
+        select:focus, input[type="number"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25); /* Blue focus */
+        }
+
+        /* --- Button --- */
+        #generateBtn, #copyBtn {
+            background: linear-gradient(45deg, var(--primary-color), var(--link-hover-color));
+            color: var(--light-text-color);
+            border: none;
+            padding: 11px 25px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all var(--animation-speed) ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+        }
+
+         .controls #generateBtn {
+             margin-bottom: 1px;
+         }
+
+
+        #generateBtn:hover, #copyBtn:hover:not(:disabled) {
+            background: linear-gradient(45deg, var(--link-hover-color), var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #generateBtn:active, #copyBtn:active:not(:disabled) {
+            transform: translateY(0);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        #generateBtn:disabled, #copyBtn:disabled {
+             opacity: 0.65;
+             cursor: not-allowed;
+             transform: none;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+             background: var(--secondary-color); /* Use secondary gray for disabled */
+        }
+
+        .btn-icon {
+            display: inline-block;
+            transition: transform var(--animation-speed) ease;
+        }
+
+        #generateBtn:hover:not(:disabled) .btn-icon,
+        #copyBtn:hover:not(:disabled) .btn-icon {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        /* --- Output Section --- */
+        #outputSection {
+            margin-top: 30px;
+            text-align: left;
+            position: relative;
+        }
+
+        #outputSection h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-size: 1.4rem; /* Slightly smaller */
+            font-weight: 700;
+        }
+
+        .output-area {
+            background-color: var(--output-bg);
+            padding: 15px 20px; /* Adjusted padding */
+            border-radius: var(--border-radius);
+            min-height: 120px; /* Adjusted min height */
+            max-height: 350px; /* Increased max height */
+            overflow-y: auto;
+            border: 1px solid #cde0ff; /* Lighter border */
+            transition: background-color var(--animation-speed) ease;
+            position: relative;
+        }
+
+        .output-area p {
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            background-color: var(--container-bg);
+            border-radius: 4px;
+            border-left: 4px solid var(--accent-color); /* Cyan border */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.05rem; /* Slightly smaller */
+            animation: numberFadeIn 0.4s ease forwards;
+            opacity: 0;
+            word-break: break-all;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .output-area p:nth-child(1) { animation-delay: 0.05s; }
+        .output-area p:nth-child(2) { animation-delay: 0.08s; }
+        .output-area p:nth-child(3) { animation-delay: 0.11s; }
+        .output-area p:nth-child(4) { animation-delay: 0.14s; }
+        .output-area p:nth-child(5) { animation-delay: 0.17s; }
+        .output-area p:nth-child(n+6) { animation-delay: 0.2s; }
+
+
+        @keyframes numberFadeIn {
+            from { opacity: 0; transform: translateX(-10px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .placeholder {
+            color: var(--placeholder-color);
+            font-style: italic;
+            text-align: center;
+            border-left: none !important;
+            background-color: transparent !important;
+            animation: none !important;
+            opacity: 1 !important;
+            font-family: 'Noto Sans Bengali', sans-serif;
+            font-size: 1rem;
+            box-shadow: none !important;
+            padding: 20px 0 !important; /* Center placeholder vertically */
+        }
+
+        /* --- Loading Indicator --- */
+        .loading {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background-color: rgba(231, 240, 255, 0.9); /* Semi-transparent output bg */
+            border-radius: var(--border-radius);
+            z-index: 10;
+            transition: opacity var(--animation-speed) ease, visibility var(--animation-speed) ease;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .loading:not(.hidden) { opacity: 1; visibility: visible; }
+
+        .spinner {
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            width: 40px; /* Larger spinner */
+            height: 40px;
+            border-radius: 50%;
+            border-left-color: var(--primary-color);
+            animation: spin 1s linear infinite;
+        }
+
+        .loading span {
+            font-weight: 500;
+            color: var(--header-footer-bg); /* Dark blue */
+            font-size: 1.05rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* --- Copy Button --- */
+        .copy-button {
+            margin-top: 25px;
+            background: linear-gradient(45deg, var(--secondary-color), #5a6268); /* Gray gradient */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 220px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all var(--animation-speed) ease;
+            visibility: hidden;
+            cursor: pointer;
+        }
+
+        .copy-button:not(.hidden) { opacity: 1; transform: translateY(0); visibility: visible; }
+
+        .copy-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #5a6268, var(--secondary-color)); /* Adjust hover gradient */
+        }
+
+        .copy-button.copied {
+            background: linear-gradient(45deg, var(--success-color), #157347); /* Green gradient */
+        }
+        .copy-button.copy-failed {
+            background: linear-gradient(45deg, var(--error-color), #bb2d3b); /* Red gradient */
+        }
+
+        /* --- Additional Sections (About, Features, More Tools) --- */
+        .info-section {
+            background-color: var(--container-bg);
+            padding: 30px 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .info-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+         .info-section .section-header {
+             text-align: center;
+             margin-bottom: 25px; /* Increased margin */
+         }
+         .info-section h2 i {
+            margin-right: 12px;
+            color: var(--primary-color);
+         }
+
+        .info-section p {
+            margin-bottom: 18px; /* Increased spacing */
+            color: #495057; /* Slightly darker gray */
+            line-height: 1.8; /* Improved readability */
+        }
+        .info-section p strong {
+            color: var(--text-color); /* Darker text for strong tags */
+        }
+
+        .info-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 15px;
+        }
+
+        .info-section ul li {
+            padding-left: 35px; /* More padding for icon */
+            position: relative;
+            margin-bottom: 15px;
+            color: #343a40; /* Darker list item text */
+        }
+
+        .info-section ul li::before {
+            content: '\f058'; /* Font Awesome check-circle icon (solid) */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900; /* Use 900 for solid icons */
+            color: var(--success-color);
+            position: absolute;
+            left: 0;
+            top: 5px; /* Adjust alignment */
+            font-size: 1.3em; /* Larger icon */
+        }
+
+        /* --- Share Section --- */
+        .share-section {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-section h4 {
+             margin-bottom: 18px;
+             color: var(--header-footer-bg); /* Dark blue */
+             font-size: 1.25rem;
+             font-weight: 700;
+        }
+         .share-section h4 i {
+             margin-right: 8px;
+             color: var(--primary-color);
+         }
+
+        .social-icons a {
+            color: var(--primary-color);
+            font-size: 2rem; /* Larger icons */
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color var(--animation-speed), transform var(--animation-speed);
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent-color); /* Cyan hover */
+            transform: translateY(-4px) scale(1.1); /* More pronounced hover */
+        }
+
+        /* --- Ad Placeholders --- */
+        .ad-placeholder {
+            background-color: var(--ad-bg-color);
+            border: 1px dashed var(--border-color);
+            padding: 20px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 728px;
+            min-height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--placeholder-color);
+            font-size: 0.9rem;
+            border-radius: var(--border-radius);
+        }
+        .ad-placeholder p {
+            margin: 0;
+            color: #6c757d;
+        }
+
+        /* --- More Tools Section (Grid Layout) --- */
+        #more-tools .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Responsive grid */
+            gap: 25px; /* Spacing between grid items */
+            margin-top: 20px;
+        }
+
+        .tool-card {
+            background-color: #fff;
+            padding: 25px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform var(--animation-speed) ease, box-shadow var(--animation-speed) ease;
+            border: 1px solid var(--border-color);
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between; /* Push content and coming soon */
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .tool-card i {
+            font-size: 2.5rem; /* Icon size */
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: block; /* Ensure icon takes full width */
+        }
+
+        .tool-card h4 {
+            color: var(--header-footer-bg); /* Dark Blue */
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .tool-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+            flex-grow: 1; /* Allow description to take space */
+        }
+
+        .tool-card .status {
+            font-style: italic;
+            font-weight: 500;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-top: auto; /* Push to bottom */
+        }
+
+        /* Remove list styles from parent section if previously used */
+        #more-tools ul { display: none; }
+
+
+        /* --- Footer --- */
+        .site-footer {
+            background-color: var(--header-footer-bg); /* Dark blue */
+            color: #ced4da; /* Lighter gray text */
+            padding: 30px 0;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.95rem;
+            border-top: 3px solid var(--primary-color); /* Top border accent */
+        }
+
+        .site-footer .page-wrapper {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             gap: 10px; /* Space between footer lines */
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: var(--light-text-color);
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        .footer-links a:hover {
+            color: var(--accent-color); /* Cyan hover */
+            text-decoration: underline;
+        }
+
+        .site-footer p {
+            margin: 0;
+        }
+        .site-footer .copyright a {
+            color: var(--light-text-color);
+            font-weight: 700;
+        }
+        .site-footer .copyright a:hover {
+            color: var(--accent-color);
+        }
+        .site-footer .developer a {
+            color: #e9ecef; /* Slightly brighter link */
+            font-weight: 500;
+        }
+         .site-footer .developer a:hover {
+            color: var(--accent-color);
+        }
+
+        .site-footer .disclaimer {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #adb5bd; /* Subdued disclaimer color */
+            margin-top: 5px;
+        }
+
+        /* --- Responsiveness --- */
+        @media (max-width: 992px) {
+             .generator-container {
+                 max-width: 95%;
+                 padding: 25px 30px;
+             }
+             .ad-placeholder {
+                 max-width: 95%;
+             }
+             #more-tools .tools-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 20px;
+            }
+            .intro-section h1 {
+                font-size: 2.1rem;
+            }
+            .intro-section p {
+                font-size: 1.05rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .site-header .page-wrapper {
+                 flex-direction: column;
+                 align-items: center;
+                 text-align: center;
+            }
+             .site-header nav ul {
+                margin-top: 15px;
+                gap: 20px; /* Reduce gap */
+             }
+             .site-header .logo .title {
+                 font-size: 1.4rem;
+             }
+             .site-header .logo i {
+                 font-size: 1.6rem;
+             }
+
+             .intro-section h1 {
+                font-size: 1.9rem;
+             }
+             .intro-section p {
+                 font-size: 1rem;
+             }
+
+            .generator-container {
+                padding: 25px 20px;
+                max-width: 100%;
+            }
+
+            .generator-header h2 {
+                font-size: 1.7rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 18px;
+            }
+
+            .control-group {
+                width: 100%;
+                min-width: auto;
+            }
+
+            select, input[type="number"], #generateBtn, #copyBtn {
+                width: 100%;
+            }
+            .controls #generateBtn {
+                margin-bottom: 0;
+            }
+
+            #outputSection h3 {
+                font-size: 1.25rem;
+            }
+
+            .output-area {
+                max-height: 300px;
+            }
+
+            .info-section {
+                 padding: 25px 20px;
+                 max-width: 100%;
+            }
+             .info-section h2 {
+                font-size: 1.6rem;
+             }
+
+            #more-tools .tools-grid {
+                grid-template-columns: 1fr; /* Stack cards */
+                gap: 15px;
+            }
+             .tool-card {
+                 padding: 20px;
+             }
+
+            .ad-placeholder {
+                 max-width: 100%;
+            }
+            .social-icons a {
+                 font-size: 1.8rem;
+                 margin: 0 10px;
+            }
+            .site-footer {
+                padding: 25px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 15px;
+            }
+             .page-wrapper {
+                 padding: 0 10px;
+             }
+
+             .site-header .logo .title {
+                 font-size: 1.3rem;
+             }
+             .site-header nav a {
+                 font-size: 0.9rem;
+             }
+             .site-header nav ul {
+                 gap: 15px;
+                 justify-content: center;
+                 flex-wrap: wrap;
+             }
+
+             .intro-section h1 {
+                font-size: 1.7rem;
+             }
+             .intro-section p {
+                 font-size: 0.95rem;
+             }
+
+            .generator-container {
+                padding: 20px 15px;
+            }
+
+            .generator-header h2 {
+                font-size: 1.5rem;
+            }
+             .subtitle {
+                font-size: 0.9rem;
+            }
+
+            select, input[type="number"], #generateBtn, #copyBtn {
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+
+             #outputSection h3 {
+                font-size: 1.2rem;
+            }
+            .output-area p {
+                font-size: 1rem;
+                padding: 7px 10px;
+            }
+            .social-icons a {
+                font-size: 1.7rem; /* Slightly smaller */
+                margin: 0 8px;
+            }
+            .ad-placeholder {
+                padding: 15px;
+                min-height: 70px;
+                font-size: 0.85rem;
+            }
+            .site-footer {
+                padding: 20px 0;
+                font-size: 0.9rem;
+            }
+            .footer-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px 15px;
+            }
+            .footer-links a {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="page-wrapper">
+            <div class="logo">
+                 <a href="#generator" title="UTCh Tools হোমপেজে যান">
+                     <i class="fa-solid fa-gear"></i> <!-- Changed Icon -->
+                     <div>
+                        <span class="title">U Tech Tools</span>
+                        <span class="tagline">দরকারী ওয়েব টুলস সহজে</span>
+                     </div>
+                 </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#generator" class="active">জেনারেটর</a></li>
+                    <li><a href="#about">সম্পর্কে</a></li>
+                    <li><a href="#features">বৈশিষ্ট্য</a></li>
+                    <li><a href="#more-tools">অন্যান্য টুলস</a></li>
+                    <!-- Example: Add a link to main site -->
+                    <!-- <li><a href="https://utch.xyz/" target="_blank">মুল সাইট</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+
+        <section class="intro-section">
+            <h1>বাংলাদেশী ফোন নম্বর জেনারেটর</h1>
+            <p>ডেভেলপার, টেস্টার এবং অন্যান্য প্রয়োজনের জন্য দ্রুত এবং সহজে নির্দিষ্ট ফরম্যাটের বাংলাদেশী ডেমো ফোন নম্বর তৈরি করুন।</p>
+        </section>
+
+
+        <!-- Ad Section 1 -->
+        <div class="ad-placeholder">
+            <p>বিজ্ঞাপন স্পেস ১ (৭২৮x৯০ বা Responsive)</p>
+        </div>
+
+        <div id="generator" class="generator-container">
+            <header class="generator-header">
+                <h2><span class="dynamic-text">এলোমেলো নম্বর</span> তৈরি করুন</h2>
+                <p class="subtitle">আপনার পছন্দের অপারেটর ও পরিমাণ নির্বাচন করে মুহূর্তেই নম্বর তৈরি করুন</p>
+            </header>
+
+            <main class="controls">
+                <div class="control-group">
+                    <label for="operator">অপারেটর নির্বাচন করুন:</label>
+                    <select id="operator">
+                        <option value="GP">গ্রামীণফোন (GP - 017, 013)</option>
+                        <option value="Robi">রবি (Robi - 018, 016)</option>
+                        <option value="BL">বাংলালিংক (BL - 019, 014)</option>
+                        <option value="TT">টেলিটক (TT - 015)</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="quantity">সংখ্যা (সর্বোচ্চ ১০০):</label>
+                    <input type="number" id="quantity" value="5" min="1" max="100" aria-label="Number quantity to generate">
+                </div>
+
+                <button id="generateBtn" title="নতুন নম্বর তৈরি করুন">
+                    <span class="btn-icon"><i class="fa-solid fa-bolt"></i></span> <!-- Changed Icon -->
+                    <span class="btn-text">জেনারেট করুন</span>
+                </button>
+            </main>
+
+            <section id="outputSection">
+                <h3><i class="fa-solid fa-list-ol"></i> জেনারেটেড নম্বরসমূহ:</h3>
+                <div id="output" class="output-area" aria-live="polite">
+                    <!-- Loading indicator structure -->
+                    <div id="loadingIndicator" class="loading hidden">
+                        <div class="spinner"></div>
+                        <span>জেনারেট হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</span>
+                    </div>
+                     <!-- Placeholder added by JS if needed -->
+                     <p class="placeholder">এখানে নম্বর দেখানো হবে...</p>
+                </div>
+                 <button id="copyBtn" class="copy-button hidden" title="তালিকাকৃত সব নম্বর একসাথে কপি করুন">
+                    <span class="btn-icon"><i class="fa-regular fa-copy"></i></span>
+                    <span class="btn-text">সব কপি করুন</span>
+                </button>
+            </section>
+
+             <!-- Share Section within Generator -->
+             <section class="share-section">
+                <h4><i class="fa-solid fa-share-nodes"></i> এই টুলটি শেয়ার করুন:</h4>
+                <div class="social-icons">
+                    <a href="#" onclick="shareOnSocialMedia('facebook'); return false;" title="ফেসবুকে শেয়ার করুন" aria-label="Share on Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" onclick="shareOnSocialMedia('twitter'); return false;" title="টুইটারে (X) শেয়ার করুন" aria-label="Share on Twitter X"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#" onclick="shareOnSocialMedia('whatsapp'); return false;" title="Whatsapp এ শেয়ার করুন" aria-label="Share on Whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="#" onclick="shareOnSocialMedia('linkedin'); return false;" title="লিঙ্কডইনে শেয়ার করুন" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" onclick="shareOnSocialMedia('telegram'); return false;" title="টেলিগ্রামে শেয়ার করুন" aria-label="Share on Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Ad Section 2 -->
+        <div class="ad-placeholder">
+            <p>বিজ্ঞাপন স্পেস ২ (৩০০x২৫০ বা Responsive)</p>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="info-section">
+             <div class="section-header">
+                <h2><i class="fa-solid fa-circle-info"></i> টুলটি সম্পর্কে বিস্তারিত</h2>
+             </div>
+            <p><strong>U Tech Tools</strong> এর এই বাংলাদেশী ফোন নম্বর জেনারেটরটি একটি সরল কিন্তু শক্তিশালী টুল। এটি বিশেষভাবে ডিজাইন করা হয়েছে সফটওয়্যার ডেভেলপার, কোয়ালিটি অ্যাসিওরেন্স (QA) টেস্টার, UI/UX ডিজাইনার, ডেটা সায়েন্টিস্ট এবং ডিজিটাল মার্কেটারদের জন্য, যাদের প্রায়শই অ্যাপ্লিকেশন টেস্টিং, ডেমো প্রেজেন্টেশন, ফর্ম ভ্যালিডেশন পরীক্ষা বা অন্যান্য বৈধ সিনারিওতে ব্যবহারের জন্য সঠিক ফরম্যাটের কিন্তু কাল্পনিক বাংলাদেশী মোবাইল নম্বরের প্রয়োজন হয়।</p>
+            <p>এই টুলটি বাংলাদেশের প্রধান মোবাইল অপারেটরদের (গ্রামীণফোন, রবি, বাংলালিংক, টেলিটক) জন্য নির্ধারিত প্রিফিক্স কোড (যেমন 017, 013, 018, 016, 019, 014, 015) ব্যবহার করে এবং আন্তর্জাতিক ফরম্যাট (+880) বজায় রেখে নম্বর তৈরি করে।</p>
+            <p><strong>অত্যন্ত গুরুত্বপূর্ণ ঘোষণা:</strong> এখানে জেনারেট করা নম্বরগুলো সম্পূর্ণ কাল্পনিক এবং গাণিতিক অ্যালগরিদমের মাধ্যমে এলোমেলোভাবে তৈরি করা হয়। এগুলোর কোনোটিই বাস্তব, সক্রিয় বা কোনো ব্যক্তির সাথে সংযুক্ত ফোন নম্বর নয়। আমরা কোনো বাস্তব ফোন নম্বরের ডেটাবেস ব্যবহার করি না বা কোনো নম্বর ভ্যালিডেট করি না। এই টুল ব্যবহারের উদ্দেশ্য শুধুমাত্র বৈধ এবং নৈতিক কাজের মধ্যে সীমাবদ্ধ রাখা উচিত।</p>
+             <p><strong>কোনো অননুমোদিত ব্যবহার কঠোরভাবে নিষিদ্ধ।</strong> দয়া করে স্প্যামিং, ফিশিং, প্রতারণা, বা অন্য কোনো অবৈধ কার্যকলাপের জন্য এই জেনারেটেড নম্বরগুলি ব্যবহার করবেন না। ব্যবহারকারী এই টুলের কোনো অপব্যবহারের জন্য সম্পূর্ণরূপে দায়ী থাকবেন। <a href="#disclaimer">ডিসক্লেইমার</a> দেখুন।</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="info-section">
+             <div class="section-header">
+                <h2><i class="fa-solid fa-list-check"></i> মূল বৈশিষ্ট্য এবং সুবিধাসমূহ</h2>
+             </div>
+            <ul>
+                <li><strong>নির্দিষ্ট অপারেটর নির্বাচন:</strong> GP (017, 013), Robi (018, 016), BL (019, 014), TT (015) - পছন্দ অনুযায়ী অপারেটরের নম্বর তৈরি করুন।</li>
+                <li><strong>ব্যাচ জেনারেশন:</strong> এক ক্লিকেই ১ থেকে ১০০টি পর্যন্ত ফোন নম্বর দ্রুত তৈরি করার ক্ষমতা।</li>
+                <li><strong>সঠিক ফরম্যাট (+880):</strong> সমস্ত নম্বর আন্তর্জাতিক ডায়ালিং কোডসহ স্ট্যান্ডার্ড বাংলাদেশী ফরম্যাটে (+880XXXXXXXXXX) জেনারেট হয়।</li>
+                <li><strong>সহজ কপি অপশন:</strong> তৈরি হওয়া সমস্ত নম্বর এক ক্লিকে কপি করার জন্য ব্যবহারকারী-বান্ধব 'সব কপি করুন' বাটন।</li>
+                <li><strong>দ্রুত ও কার্যকর পারফরম্যান্স:</strong> অপ্টিমাইজড কোডের মাধ্যমে কম সময়ে নম্বর তৈরি হয়।</li>
+                <li><strong>পরিষ্কার ও আধুনিক ইন্টারফেস:</strong> সহজবোধ্য ডিজাইন, যা ব্যবহার করা অত্যন্ত স্বজ্ঞাত।</li>
+                <li><strong>সম্পূর্ণ রেসপন্সিভ ডিজাইন:</strong> মোবাইল, ট্যাবলেট, ল্যাপটপ, ডেস্কটপ - সব ডিভাইসে সাবলীলভাবে কাজ করে।</li>
+                <li><strong>সোশ্যাল মিডিয়া শেয়ারিং:</strong> পছন্দসই প্ল্যাটফর্মে টুলটি সহজে শেয়ার করার বিল্ট-ইন অপশন।</li>
+                <li><strong>কোনো রেজিস্ট্রেশন বা লগইন নেই:</strong> টুলটি ব্যবহারের জন্য কোনো প্রকার সাইন-আপ বা ব্যক্তিগত তথ্যের প্রয়োজন হয় না।</li>
+                <li><strong>গোপনীয়তা কেন্দ্রিক:</strong> কোনো জেনারেটেড ডেটা বা ব্যবহারকারীর তথ্য আমাদের সার্ভারে সংরক্ষণ করা হয় না।</li>
+                <li><strong>সম্পূর্ণ বিনামূল্যে:</strong> এই টুলটি ব্যবহারের জন্য কোনো চার্জ বা সাবস্ক্রিপশন ফি নেই।</li>
+            </ul>
+        </section>
+
+         <!-- Ad Section 3 -->
+        <div class="ad-placeholder">
+             <p>বিজ্ঞাপন স্পেস ৩ (Responsive)</p>
+        </div>
+
+        <!-- More Tools Section -->
+        <section id="more-tools" class="info-section">
+             <div class="section-header">
+                 <h2><i class="fa-solid fa-screwdriver-wrench"></i> আমাদের অন্যান্য প্রয়োজনীয় টুলস</h2>
+             </div>
+            <p style="text-align: center; margin-bottom: 30px;">আমরা ব্যবহারকারীদের দৈনন্দিন ডিজিটাল কাজ সহজ করার জন্য আরও বিভিন্ন ধরনের টুল তৈরি করছি। নিচে আমাদের কিছু টুল দেখুন (কিছু শীঘ্রই আসছে):</p>
+
+            <div class="tools-grid">
+                <!-- Tool Card 1 -->
+                <div class="tool-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h4>ফোন নম্বর জেনারেটর</h4>
+                    <p>এই টুলটি ব্যবহার করে বিভিন্ন দেশের (শীঘ্রই আসছে) ফরম্যাট অনুযায়ী ডেমো ফোন নম্বর তৈরি করুন।</p>
+                    <span class="status"><i class="fa-solid fa-check"></i> বর্তমানে উপলব্ধ</span>
+                </div>
+                <!-- Tool Card 2 -->
+                <div class="tool-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>শক্তিশালী পাসওয়ার্ড জেনারেটর</h4>
+                    <p>আপনার অনলাইন অ্যাকাউন্টের সুরক্ষার জন্য কঠিন, ইউনিক এবং নিরাপদ পাসওয়ার্ড তৈরি করুন।</p>
+                    <span class="status"><i class="fa-regular fa-hourglass-half"></i> শীঘ্রই আসছে!</span>
+                </div>
+                <!-- Tool Card 3 -->
+                 <div class="tool-card">
+                    <i class="fa-solid fa-id-card"></i>
+                    <h4>NID নম্বর ফরম্যাট জেনারেটর</h4>
+                    <p>শুধুমাত্র পরীক্ষার উদ্দেশ্যে বৈধ ফরম্যাটের ডেমো জাতীয় পরিচয়পত্র (NID) নম্বর তৈরি করুন।</p>
+                    <span class="status"><i class="fa-regular fa-hourglass-half"></i> শীঘ্রই আসছে!</span>
+                </div>
+                 <!-- Tool Card 4 -->
+                <div class="tool-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>এলোমেলো ঠিকানা জেনারেটর (BD)</h4>
+                    <p>টেস্টিং বা ডেমোর জন্য পূর্ণাঙ্গ বাংলাদেশী ঠিকানা (জেলা, উপজেলা, পোস্টকোড সহ) তৈরি করুন।</p>
+                    <span class="status"><i class="fa-regular fa-hourglass-half"></i> শীঘ্রই আসছে!</span>
+                </div>
+                 <!-- Tool Card 5 -->
+                 <div class="tool-card">
+                     <i class="fa-solid fa-text-slash"></i>
+                    <h4>টেক্সট টুলস</h4>
+                    <p>অক্ষর গণনা, শব্দ গণনা, টেক্সট কেস পরিবর্তন (আপার/লোয়ার), ডুপ্লিকেট লাইন অপসারণ ইত্যাদি ছোটখাটো টেক্সট এডিটিং টুল।</p>
+                    <span class="status"><i class="fa-regular fa-hourglass-half"></i> শীঘ্রই আসছে!</span>
+                 </div>
+                 <!-- Tool Card 6 -->
+                 <div class="tool-card">
+                     <i class="fa-solid fa-qrcode"></i>
+                    <h4>QR কোড জেনারেটর</h4>
+                    <p>ওয়েবসাইট লিংক, টেক্সট, কন্টাক্ট ইনফো ইত্যাদির জন্য কাস্টমাইজড QR কোড তৈরি করুন।</p>
+                    <span class="status"><i class="fa-regular fa-hourglass-half"></i> শীঘ্রই আসছে!</span>
+                 </div>
+            </div>
+             <p style="text-align: center; font-style: italic; font-weight: 500; color: var(--primary-color); margin-top: 30px;">নতুন সব টুলস এবং আপডেটের জন্য আমাদের <a href="https://utch.xyz/" target="_blank" rel="noopener noreferrer">UTCh Tools</a> ওয়েবসাইট ভিজিট করুন!</p>
+        </section>
+
+    </div> <!-- End Page Wrapper -->
+
+    <footer class="site-footer" id="disclaimer">
+        <div class="page-wrapper">
+             <div class="footer-links">
+                 <a href="#generator">জেনারেটর</a>
+                 <a href="#about">সম্পর্কে</a>
+                 <a href="#features">বৈশিষ্ট্য</a>
+                 <a href="#more-tools">অন্যান্য টুলস</a>
+                 <!-- Example: Add Privacy Policy/Disclaimer Link -->
+                 <!-- <a href="/privacy-policy">গোপনীয়তা নীতি</a> -->
+                 <!-- <a href="/terms">ব্যবহারের শর্তাবলী</a> -->
+             </div>
+             <p class="copyright">© ২০২৫ - বাংলাদেশী ফোন নম্বর টুলস | সর্বস্বত্ব <a href="https://utch.xyz/" target="_blank" rel="noopener noreferrer" title="Visit UTCh Tools">U Tech Tools</a> কর্তৃক সংরক্ষিত।</p>
+             <p class="developer">ডেভেলপমেন্ট এবং কারিগরি সহায়তায়: <a href="https://utechsolution.com/" target="_blank" rel="noopener noreferrer" title="Visit U Tech Web Solution">U Tech Web Solution</a></p>
+             <p class="disclaimer"><i>ডিসক্লেইমার: এই টুল দ্বারা জেনারেটকৃত সকল ফোন নম্বর সম্পূর্ণ কাল্পনিক এবং শুধুমাত্র বৈধ টেস্টিং ও ডেমো পারপাসে ব্যবহারের জন্য। কোনো প্রকার অবৈধ বা অনৈতিক কাজে এর ব্যবহার কঠোরভাবে নিষিদ্ধ এবং এর জন্য টুল কর্তৃপক্ষ কোনোভাবেই দায়ী থাকবে না।</i></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // DOM Elements
+            const operatorSelect = document.getElementById('operator');
+            const quantityInput = document.getElementById('quantity');
+            const generateBtn = document.getElementById('generateBtn');
+            const outputDiv = document.getElementById('output');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const copyBtn = document.getElementById('copyBtn');
+            const copyBtnText = copyBtn.querySelector('.btn-text');
+            const copyBtnIcon = copyBtn.querySelector('.btn-icon i'); // Target the <i> tag
+            const navLinks = document.querySelectorAll('.site-header nav a');
+            const generatorSection = document.getElementById('generator'); // Target the generator section
+
+            // Operator prefixes
+            const operators = {
+                "GP": ["17", "13"],
+                "Robi": ["18", "16"],
+                "BL": ["19", "14"],
+                "TT": ["15"]
+            };
+
+            // --- Functions ---
+
+            /**
+             * Generates a random Bangladeshi phone number for a given operator.
+             * @param {string} operatorCode - The code for the operator (e.g., "GP").
+             * @returns {string|null} The generated phone number in +880 format or null if invalid code.
+             */
+            function generateBdPhoneNumber(operatorCode) {
+                if (!operators[operatorCode]) {
+                    console.error("Invalid operator code:", operatorCode);
+                    return null;
+                }
+                const prefixes = operators[operatorCode];
+                const selectedPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+                let subscriberNumber = "";
+                for (let i = 0; i < 8; i++) {
+                    subscriberNumber += Math.floor(Math.random() * 10);
+                }
+                return `+880${selectedPrefix}${subscriberNumber}`;
+            }
+
+             /**
+             * Displays the generated numbers in the output area.
+             * Handles placeholder and copy button visibility.
+             * @param {string[]} numbers - An array of phone numbers to display.
+             */
+            function displayNumbers(numbers) {
+                // Clear previous results (p tags that are not the placeholder)
+                outputDiv.querySelectorAll('p:not(.placeholder)').forEach(p => p.remove());
+
+                const placeholder = outputDiv.querySelector('.placeholder');
+
+                if (numbers.length > 0) {
+                    if (placeholder) placeholder.style.display = 'none'; // Hide placeholder
+
+                     // Insert numbers before the loading indicator (if it exists)
+                    const fragment = document.createDocumentFragment();
+                    numbers.forEach((number, index) => {
+                        const p = document.createElement('p');
+                        p.textContent = number;
+                        // Apply staggered animation delay
+                        p.style.animationDelay = `${index * 0.03}s`; // Slightly faster animation
+                        fragment.appendChild(p);
+                    });
+
+                    if (loadingIndicator) {
+                        outputDiv.insertBefore(fragment, loadingIndicator);
+                    } else {
+                        outputDiv.appendChild(fragment);
+                    }
+
+                    // Reset and show copy button
+                    copyBtn.classList.remove('hidden', 'copied', 'copy-failed');
+                    copyBtnIcon.className = 'fa-regular fa-copy';
+                    copyBtnText.textContent = 'সব কপি করুন';
+                    copyBtn.disabled = false;
+                    copyBtn.style.opacity = '1'; // Make sure it's fully opaque when shown
+                    copyBtn.style.visibility = 'visible'; // Make sure it's visible
+
+                } else {
+                    // No numbers generated or cleared
+                     if (!placeholder) {
+                         // Create placeholder if it doesn't exist
+                         const p = document.createElement('p');
+                         p.classList.add('placeholder');
+                         p.textContent = 'এখানে নম্বর দেখানো হবে...';
+                         if (loadingIndicator) {
+                             outputDiv.insertBefore(p, loadingIndicator);
+                         } else {
+                             outputDiv.appendChild(p);
+                         }
+                    } else {
+                        placeholder.style.display = 'block'; // Show existing placeholder
+                    }
+                    // Hide copy button
+                    copyBtn.classList.add('hidden');
+                    copyBtn.classList.remove('copied', 'copy-failed'); // Reset styles if any
+                    copyBtn.disabled = true;
+                    copyBtn.style.opacity = '0'; // Explicitly hide
+                    copyBtn.style.visibility = 'hidden'; // Explicitly hide
+
+                }
+            }
+
+            /**
+             * Handles the click event for the generate button. Uses async/await and chunking.
+             */
+            async function handleGenerateClick() {
+                const selectedOperator = operatorSelect.value;
+                let quantity = parseInt(quantityInput.value, 10);
+
+                // Validate quantity
+                if (isNaN(quantity) || quantity < 1) {
+                    alert("অনুগ্রহ করে কমপক্ষে ১টি নম্বরের জন্য একটি সংখ্যা লিখুন।");
+                    quantityInput.value = 1;
+                    quantity = 1;
+                    quantityInput.focus();
+                    return;
+                }
+                if (quantity > 100) {
+                    alert("একসাথে সর্বোচ্চ ১০০টি নম্বর তৈরি করা যাবে।");
+                     quantityInput.value = 100;
+                    quantity = 100;
+                    quantityInput.focus();
+                    return;
+                }
+
+                // --- Start Loading State ---
+                loadingIndicator.classList.remove('hidden');
+                loadingIndicator.style.opacity = '1'; // Ensure opacity is set for transition
+                loadingIndicator.style.visibility = 'visible'; // Ensure visibility is set for transition
+
+                // Clear previous numbers and hide placeholder
+                 outputDiv.querySelectorAll('p:not(.placeholder)').forEach(p => p.remove());
+                 const placeholder = outputDiv.querySelector('.placeholder');
+                 if (placeholder) placeholder.style.display = 'none';
+
+                copyBtn.classList.add('hidden');
+                copyBtn.style.opacity = '0';
+                copyBtn.style.visibility = 'hidden';
+                copyBtn.disabled = true;
+                generateBtn.disabled = true;
+                generateBtn.querySelector('.btn-text').textContent = 'জেনারেট হচ্ছে...';
+                generateBtn.querySelector('.btn-icon i').classList.add('fa-spin'); // Add spin animation
+                // --- End Loading State ---
+
+
+                const generatedNumbers = [];
+                const chunkSize = 20; // Generate in slightly larger chunks
+
+                const generateChunk = (count) => {
+                    return new Promise(resolve => {
+                        // Use setTimeout for slight delay to allow UI updates, rAF might be too fast for this
+                        setTimeout(() => {
+                            const limit = Math.min(count, chunkSize);
+                            for (let i = 0; i < limit; i++) {
+                                const number = generateBdPhoneNumber(selectedOperator);
+                                if (number) {
+                                    generatedNumbers.push(number);
+                                }
+                            }
+                            resolve();
+                        }, 10); // Small delay per chunk
+                    });
+                };
+
+                let generatedCount = 0;
+                await new Promise(resolve => setTimeout(resolve, 50)); // Initial small delay
+
+                while (generatedCount < quantity) {
+                    await generateChunk(quantity - generatedCount);
+                    generatedCount = generatedNumbers.length;
+                }
+
+                // Simulate a minimum processing time for visual feedback
+                await new Promise(resolve => setTimeout(resolve, 300));
+
+                // --- Stop Loading State ---
+                loadingIndicator.classList.add('hidden');
+                loadingIndicator.style.opacity = '0';
+                loadingIndicator.style.visibility = 'hidden';
+                generateBtn.disabled = false;
+                generateBtn.querySelector('.btn-text').textContent = 'জেনারেট করুন';
+                 generateBtn.querySelector('.btn-icon i').classList.remove('fa-spin'); // Remove spin animation
+                // --- End Loading State ---
+
+                displayNumbers(generatedNumbers); // Display the final list
+            }
+
+            /**
+             * Copies all generated numbers (visible in the output area) to the clipboard.
+             */
+            async function handleCopyClick() {
+                if (copyBtn.disabled || copyBtn.classList.contains('hidden')) return;
+
+                const numbersToCopy = Array.from(outputDiv.querySelectorAll('p:not(.placeholder)'))
+                                   .map(p => p.textContent.trim())
+                                   .filter(text => text)
+                                   .join('\n');
+
+                if (!numbersToCopy) {
+                    // Should not happen if button is visible, but handle defensively
+                    copyBtnText.textContent = 'কিছু নেই!';
+                    copyBtnIcon.className = 'fa-solid fa-circle-exclamation';
+                    copyBtn.classList.add('copy-failed');
+                    copyBtn.disabled = true;
+
+                     setTimeout(() => {
+                        copyBtnText.textContent = 'সব কপি করুন';
+                        copyBtnIcon.className = 'fa-regular fa-copy';
+                        copyBtn.classList.remove('copy-failed');
+                        // Re-hide if no numbers exist now
+                         if (outputDiv.querySelectorAll('p:not(.placeholder)').length === 0) {
+                            copyBtn.classList.add('hidden');
+                            copyBtn.style.opacity = '0';
+                            copyBtn.style.visibility = 'hidden';
+                         } else {
+                             copyBtn.disabled = false; // Re-enable if numbers were added back somehow
+                         }
+                    }, 2000);
+                    return;
+                }
+
+                 // Temporarily disable button during copy attempt
+                 copyBtn.disabled = true;
+                 copyBtnText.textContent = 'কপি হচ্ছে...';
+                 copyBtnIcon.className = 'fa-solid fa-spinner fa-spin'; // Spinner icon
+
+                try {
+                    await navigator.clipboard.writeText(numbersToCopy);
+
+                    // Success state
+                    copyBtnText.textContent = 'কপি হয়েছে!';
+                    copyBtnIcon.className = 'fa-solid fa-check';
+                    copyBtn.classList.add('copied');
+                    copyBtn.classList.remove('copy-failed');
+
+                    setTimeout(() => {
+                        copyBtnText.textContent = 'সব কপি করুন';
+                        copyBtnIcon.className = 'fa-regular fa-copy';
+                        copyBtn.classList.remove('copied');
+                        copyBtn.disabled = false; // Re-enable
+                    }, 2000);
+
+                } catch (err) {
+                    console.error('ক্লিপবোর্ডে কপি করতে ব্যর্থ:', err);
+
+                     // Failure state
+                    copyBtnText.textContent = 'কপি ব্যর্থ';
+                    copyBtnIcon.className = 'fa-solid fa-xmark';
+                    copyBtn.classList.add('copy-failed');
+                    copyBtn.classList.remove('copied');
+
+                     // Optional alert for user
+                    alert('দুঃখিত, নম্বর কপি করা যায়নি। আপনার ব্রাউজার ক্লিপবোর্ড অ্যাক্সেস সমর্থন নাও করতে পারে অথবা অনুমতি ব্লক করা হয়েছে।');
+
+                    setTimeout(() => {
+                        copyBtnText.textContent = 'সব কপি করুন';
+                         copyBtnIcon.className = 'fa-regular fa-copy';
+                        copyBtn.classList.remove('copy-failed');
+                        copyBtn.disabled = false; // Re-enable
+                    }, 3000);
+                }
+            }
+
+
+            /**
+             * Handles sharing on social media.
+             * @param {string} platform - The social media platform.
+             */
+            window.shareOnSocialMedia = function(platform) {
+                const pageUrl = encodeURIComponent(window.location.href.split('#')[0]); // Get URL without fragment
+                const pageTitle = encodeURIComponent(document.title);
+                const shareTextBase = `সহজে বাংলাদেশী ডেমো ফোন নম্বর তৈরি করার এই টুলটি দেখুন (${pageTitle})। খুবই দরকারি!`;
+                const shareText = encodeURIComponent(shareTextBase);
+                const shareTextWhatsapp = encodeURIComponent(`${shareTextBase} ${pageUrl}`);
+                const shareTextTelegram = encodeURIComponent(`${shareTextBase}\n${pageUrl}`);
+
+                let shareUrl;
+
+                switch (platform) {
+                    case 'facebook':
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}"e=${shareText}`;
+                        break;
+                    case 'twitter':
+                        shareUrl = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${shareText}`;
+                        break;
+                    case 'whatsapp':
+                        shareUrl = `https://api.whatsapp.com/send?text=${shareTextWhatsapp}`;
+                        break;
+                    case 'linkedin':
+                        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`; // LinkedIn often ignores text, uses meta tags
+                        break;
+                     case 'telegram':
+                        shareUrl = `https://t.me/share/url?url=${pageUrl}&text=${shareTextTelegram}`;
+                        break;
+                    default:
+                        console.warn('Unknown share platform:', platform);
+                        return;
+                }
+                window.open(shareUrl, '_blank', 'width=600,height=450,noopener,noreferrer');
+            }
+
+
+             // --- Active Nav Link Logic ---
+             function setActiveNavLink() {
+                 let currentSection = '';
+                 const sections = document.querySelectorAll('section[id], div[id].generator-container'); // Include generator container
+
+                 sections.forEach(section => {
+                     const sectionTop = section.offsetTop;
+                     const sectionHeight = section.clientHeight;
+                     // Consider a section active if it's within the top 60% of the viewport
+                     if (pageYOffset >= sectionTop - window.innerHeight * 0.4 &&
+                         pageYOffset < sectionTop + sectionHeight - window.innerHeight * 0.4) {
+                         currentSection = section.getAttribute('id');
+                     }
+                 });
+
+                 // Fallback to generator if nothing else is active near the top
+                 if (!currentSection && pageYOffset < window.innerHeight * 0.5) {
+                     currentSection = 'generator';
+                 }
+
+                 navLinks.forEach(link => {
+                     link.classList.remove('active');
+                     // Check if the link's href matches the current section ID (handling the hash)
+                     if (link.getAttribute('href') === `#${currentSection}`) {
+                         link.classList.add('active');
+                     }
+                 });
+
+                  // Special case for footer disclaimer link
+                 if (currentSection === 'disclaimer') {
+                     // Optionally highlight a 'Disclaimer' link in nav if it existed
+                 }
+             }
+
+
+            // --- Event Listeners ---
+            generateBtn.addEventListener('click', handleGenerateClick);
+            copyBtn.addEventListener('click', handleCopyClick);
+
+            quantityInput.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    generateBtn.click();
+                }
+            });
+
+             // Smooth scroll for internal links & set active state on click
+             navLinks.forEach(link => {
+                 link.addEventListener('click', function(e) {
+                     // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    // Add active class to the clicked link
+                    this.classList.add('active');
+
+                     // Smooth scrolling is handled by CSS, but prevent default if needed for JS scroll
+                     const targetId = this.getAttribute('href');
+                     if (targetId.startsWith('#')) {
+                         // e.preventDefault(); // Keep default behavior if using CSS scroll-behavior
+                         // const targetElement = document.querySelector(targetId);
+                         // if (targetElement) {
+                         //     targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                         // }
+                     }
+                 });
+             });
+
+             // Update active nav link on scroll
+             window.addEventListener('scroll', setActiveNavLink);
+
+             // --- Initial Setup ---
+            displayNumbers([]); // Initialize with placeholder
+            setActiveNavLink(); // Set initial active link based on load position
+
+        }); // End DOMContentLoaded
+    </script>
+
+</body>
+      </html>
